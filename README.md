@@ -36,6 +36,9 @@ cd cxvh-cli-test-lib
 npm unlink
 cd cxvh-cli-test
 npm unlink cxvh-cli-test-lib
+# 如果link不存在
+rm -rf node_modules
+npm link
 ```
 理解`npm link`
 - `npm link cxvh-cli-test-lib`将当前项目中`node_modules`下指定的库文件连接到`node`全局`node_modules`下的库文件
