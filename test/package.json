@@ -2,7 +2,7 @@
   "name": "cxvh-cli-test",
   "version": "0.0.1",
   "description": "原生脚手架开发",
-  "main": "index.js",
+  "main": "cxvh-cli-test",
   "bin": {
     "cxvh-cli-test": "bin/index.js"
   },
@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cxvh-cli-test-lib": "^1.0.0"
+    "clone-deep": "^4.0.1",
+    "cxvh-cli-test-lib": "^1.0.0",
+    "dedent": "^0.7.0",
+    "yargs": "^16.2.0"
   }
 }
