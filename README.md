@@ -5,9 +5,10 @@
 - `ls -al /c/...`接`which`的文件地址查看详情
 
 ### 关联包
-- 进`test`文件夹`npm link`
-- 再进`lib`文件夹`npm link`
-- 再进`test`文件夹`npm link cxvh-cli-test-lib`就可以使用`lib`包了
+- 进`lib`文件夹`npm link`
+- 再进`test`文件夹
+  - 剪贴`package.json`里面的本地依赖，执行`cnpm i`，再粘贴进去
+  - 执行`npm link cxvh-cli-test-lib`这样`link`本地包
 - 然后就可以使用`cxvh-cli-test`命令了
 
 需要手动添加
@@ -97,3 +98,6 @@ npm link
 - `require.resolve.paths`实现原理：
   - 如果路径为`/`（根目录）,直接返回`['/node_modules']`
   - 否则，将路径字符串从后往前遍历，查询到`/`时，拆分路径，在后面加上`node_modules`，并传入一个`paths`数组，直至查询不到`/`后返回`path`数组
+
+
+### commander是如何实现一个脚手架的？
