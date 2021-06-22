@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node test/bin/process",
+    "process": "node test/bin/process"
+  },
+  "dependencies": {
+    "path-exists": "^4.0.0"
+  }
+}
