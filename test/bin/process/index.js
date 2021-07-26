@@ -44,6 +44,16 @@ console.log('node子进程调用方法\n', cp, '\n因为是异步，所以执行
 //     console.log('stdout', stdout)
 //     console.log('stderr', stderr)
 // })
+// const child = cp.spawn('cnpm',["install","--force"], {
+//     shell:'C:\\Windows\\System32\\cmd.exe',
+//     cwd: 'E:\\learn\\cxvh-cli-test\\cache\\node-nvm',
+//     stdio: 'inherit'
+// })
+const child = cp.spawn('node',["-e","console.log('打印当前时间戳',Date.now())"], {
+    shell:'C:\\Windows\\System32\\cmd.exe',
+    stdio: 'inherit'
+})
+
 /*******************/
 // const child=cp.fork(path.resolve(__dirname,'child.js'));
 // child.send('向子进程发送消息，子进程接收到会打印出来！',()=>{
@@ -58,16 +68,16 @@ console.log('node子进程调用方法\n', cp, '\n因为是异步，所以执行
 // })
 // console.log('main pid:',process.pid);
 /*******************/
-const ret1=cp.execSync('git clone git@gitee.com:codeba/node-nvm.git nodenvm' + Date.now(),{
-    cwd: 'E:\\learn\\cxvh-cli-test\\cache'
-})
-console.log('ret1',ret1)
-const ret2=cp.execFileSync('git',['clone','git@gitee.com:codeba/node-nvm.git','nodenvm' + Date.now()],{
-    cwd: 'E:\\learn\\cxvh-cli-test\\cache'
-})
-console.log('ret2',ret2)
-const ret3=cp.spawnSync('git',['clone','git@gitee.com:codeba/node-nvm.git','nodenvm' + Date.now()],{
-    cwd: 'E:\\learn\\cxvh-cli-test\\cache'
-})
-console.log('ret3',ret3)
+// const ret1=cp.execSync('git clone git@gitee.com:codeba/node-nvm.git nodenvm' + Date.now(),{
+//     cwd: 'E:\\learn\\cxvh-cli-test\\cache'
+// })
+// console.log('ret1',ret1)
+// const ret2=cp.execFileSync('git',['clone','git@gitee.com:codeba/node-nvm.git','nodenvm' + Date.now()],{
+//     cwd: 'E:\\learn\\cxvh-cli-test\\cache'
+// })
+// console.log('ret2',ret2)
+// const ret3=cp.spawnSync('git',['clone','git@gitee.com:codeba/node-nvm.git','nodenvm' + Date.now()],{
+//     cwd: 'E:\\learn\\cxvh-cli-test\\cache'
+// })
+// console.log('ret3',ret3)
 /*******************/

@@ -20,4 +20,25 @@
 // require('./core')
 
 // require('../dist/core')
-require('./process/index')
+// require('./process/index')
+// ----------------------------------------------
+// require('./inquirer/index')
+// ----------------------------------------------
+
+// (async function(){
+//   var Spinner = require('cli-spinner').Spinner;
+ 
+//   var spinner = new Spinner('processing.. %s');
+//   spinner.setSpinnerString('|/-\\');
+//   spinner.start();
+//   await new Promise(resolve=>setTimeout(resolve,3000))
+//   spinner.stop(true);
+// })()
+
+// ----------------------------------------------
+// require('./inquirer/readline.demo')
+// require('./inquirer/stepread')
+// require('./inquirer/ansi')
+// require('./inquirer/rxjs.demo')
+require('./inquirer/list')
+console.log(123)

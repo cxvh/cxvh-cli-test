@@ -1,6 +1,6 @@
 {
   "name": "cxvh-cli-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "原生脚手架开发",
   "main": "cxvh-cli-test",
   "bin": {
@@ -11,16 +11,20 @@
     "dev:desc": "-w === --watch",
     "dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ejs":"node ./bin/index.mjs"
+    "mjs": "node ./bin/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ansi-escapes": "4.3.1",
+    "cli-spinner": "^0.2.10",
     "clone-deep": "^4.0.1",
     "commander": "^7.1.0",
     "cxvh-cli-test-lib": "1.0.0",
     "dedent": "^0.7.0",
+    "inquirer": "^8.1.1",
+    "rxjs": "^7.2.0",
     "yargs": "^16.2.0"
   },
   "devDependencies": {
